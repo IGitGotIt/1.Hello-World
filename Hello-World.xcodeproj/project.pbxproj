@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		231D97A91C000448004DF03A /* MF_Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 231D97A81C000448004DF03A /* MF_Base64Additions.m */; settings = {ASSET_TAGS = (); }; };
-		23252A7D1BFFF11800A6926B /* OpenTok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23252A7C1BFFF11800A6926B /* OpenTok.framework */; settings = {ASSET_TAGS = (); }; };
+		231D97AD1C0017A1004DF03A /* OpenTok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231D97AC1C0017A0004DF03A /* OpenTok.framework */; settings = {ASSET_TAGS = (); }; };
 		23252A7F1BFFF13900A6926B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 23252A7E1BFFF13900A6926B /* libc++.tbd */; };
 		23252A801BFFF13C00A6926B /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D01FB21A3A133C005D84F9 /* VideoToolbox.framework */; };
 		23252A811BFFF13D00A6926B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D492D19019547E4C00F4F534 /* GLKit.framework */; };
@@ -60,7 +60,7 @@
 		00BACA06E8CDB759A9349E08 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		231D97A71C000448004DF03A /* MF_Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MF_Base64Additions.h; sourceTree = "<group>"; };
 		231D97A81C000448004DF03A /* MF_Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MF_Base64Additions.m; sourceTree = "<group>"; };
-		23252A7C1BFFF11800A6926B /* OpenTok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenTok.framework; sourceTree = "<group>"; };
+		231D97AC1C0017A0004DF03A /* OpenTok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenTok.framework; sourceTree = "<group>"; };
 		23252A7E1BFFF13900A6926B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		23252A911BFFFDD000A6926B /* JWT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWT.h; sourceTree = "<group>"; };
 		23252A921BFFFDD000A6926B /* JWT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWT.m; sourceTree = "<group>"; };
@@ -120,6 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23252A831BFFF14100A6926B /* CoreTelephony.framework in Frameworks */,
+				231D97AD1C0017A1004DF03A /* OpenTok.framework in Frameworks */,
 				23252A811BFFF13D00A6926B /* GLKit.framework in Frameworks */,
 				23252A851BFFF14500A6926B /* CoreVideo.framework in Frameworks */,
 				23252A821BFFF13F00A6926B /* SystemConfiguration.framework in Frameworks */,
@@ -132,7 +133,6 @@
 				23252A8A1BFFF14F00A6926B /* Foundation.framework in Frameworks */,
 				23252A861BFFF14700A6926B /* CoreMedia.framework in Frameworks */,
 				23252A7F1BFFF13900A6926B /* libc++.tbd in Frameworks */,
-				23252A7D1BFFF11800A6926B /* OpenTok.framework in Frameworks */,
 				23252A801BFFF13C00A6926B /* VideoToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,7 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				23252A7E1BFFF13900A6926B /* libc++.tbd */,
-				23252A7C1BFFF11800A6926B /* OpenTok.framework */,
+				231D97AC1C0017A0004DF03A /* OpenTok.framework */,
 				A5D01FB21A3A133C005D84F9 /* VideoToolbox.framework */,
 				D492D19019547E4C00F4F534 /* GLKit.framework */,
 				D4426148185F8F5000E23699 /* SystemConfiguration.framework */,

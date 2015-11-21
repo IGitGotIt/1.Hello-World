@@ -21,8 +21,8 @@
     int counter;
     NSString * signalReceived;
 }
-static double widgetHeight = 240/4;
-static double widgetWidth = 320/4;
+static double widgetHeight = 240/2;
+static double widgetWidth = 320/2;
 
 // *** Fill the following variables using your own Project info  ***
 // ***          https://dashboard.tokbox.com/projects            ***
