@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v5f-Vm-swW"/>
+                        <viewControllerLayoutGuide type="bottom" id="hwA-Qr-szX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbV-jp-8vp">
+                                <rect key="frame" x="8" y="499" width="55" height="30"/>
+                                <state key="normal" title="Decrypt"/>
+                                <connections>
+                                    <action selector="deCrypt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="z6Q-Yy-fZx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NG-oY-Bte">
+                                <rect key="frame" x="190" y="494" width="92" height="30"/>
+                                <state key="normal" title="Send a signal"/>
+                                <connections>
+                                    <action selector="sendASignal:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BfJ-9M-sOM"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yfa-Xa-zsT">
+                                <rect key="frame" x="4" y="325" width="244" height="128"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yfa-Xa-zsT" secondAttribute="trailing" constant="56" id="2BV-v0-Fdd"/>
+                            <constraint firstItem="hwA-Qr-szX" firstAttribute="top" secondItem="3NG-oY-Bte" secondAttribute="bottom" constant="44" id="4Fj-ZA-sR1"/>
+                            <constraint firstItem="Yfa-Xa-zsT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-12" id="KII-w7-DGF"/>
+                            <constraint firstItem="Yfa-Xa-zsT" firstAttribute="top" secondItem="v5f-Vm-swW" secondAttribute="bottom" constant="305" id="aWZ-yN-M4H"/>
+                            <constraint firstItem="dbV-jp-8vp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-8" id="lEd-ek-Vw7"/>
+                            <constraint firstItem="hwA-Qr-szX" firstAttribute="top" secondItem="Yfa-Xa-zsT" secondAttribute="bottom" constant="115" id="qP4-RG-xIW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3NG-oY-Bte" secondAttribute="trailing" constant="22" id="t5A-iH-dur"/>
+                            <constraint firstItem="hwA-Qr-szX" firstAttribute="top" secondItem="dbV-jp-8vp" secondAttribute="bottom" constant="39" id="vi2-77-GcZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="justALabel" destination="Yfa-Xa-zsT" id="LWX-aQ-1Pg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="277"/>
+        </scene>
+    </scenes>
+</document>
